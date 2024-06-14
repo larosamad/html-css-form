@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Benvenuti al Nostro Sito di Registrazione</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Servizi</li>
+                <li>Contatti</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form name="sign_in" action="login" method="post" >
+                <label>
+                    Nome  <input name="name" type="text" required>
+                </label>
+
+                <label>
+                    Password  <input name="password" type="password" required>
+                </label>
+
+                <label>
+                    Email  <input name="email" type="email" required>
+                </label>
+
+                <label>
+                    Username  <input name="username" type="username" required>
+                </label>
+                
+                <label>
+                    Età  <input name="age" type="number" min="18" max="130" required> 
+                </label>
+
+                <label>
+                    Paese  
+                    <select name="nation" required>
+                        <option value="null">Seleziona un paese</option>
+                        <option value="GB">Regno Unito</option>
+                        <option value="AL">Albania</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AT">Austria</option>
+                        <option value="BY">Bielorussia</option>
+                        <option value="BE">Belgio</option>
+                        <option value="BA">Bosnia </option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="HR">Croazia</option>
+                        <option value="CY">Cipro</option>
+                        <option value="CZ">Repubblica Ceca</option>
+                        <option value="FR">Francia</option>
+                        <option value="DE">Germania</option>
+                        <option value="GR">Grecia</option>
+                        <option value="VA">Vaticano</option>
+                        <option value="HU">Ungheria</option>
+                        <option value="IT">Italia</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LU">Lussemburgo</option>
+                        <option value="MK">Macedonia</option>
+                        <option value="MT">Malta</option>
+                        <option value="MD">Moldova</option>
+                        <option value="MC">Monaco</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="NL">Paesi Bassi</option>
+                        <option value="PL">Polonia</option>
+                        <option value="PT">Portogallo</option>
+                        <option value="RO">Romania</option>
+                        <option value="SM">San Marino</option>
+                        <option value="RS">Serbia</option>
+                        <option value="SK">Slovacchia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="ES">Spagna</option>
+                        <option value="UA">Ucraina</option>
+                        <option value="DK">Danimarca</option>
+                        <option value="EE">Estonia</option>
+                        <option value="FO">Faroe</option>
+                        <option value="FI">Finlandia</option>
+                        <option value="GL">Groellandia</option>
+                        <option value="IS">Islanda</option>
+                        <option value="IE">Irlanda</option>
+                        <option value="LV">Lettonia</option>
+                        <option value="LT">Lituania</option>
+                        <option value="NO">Norvegia</option>
+                        <option value="SE">Svezia</option>
+                        <option value="CH">Svizzera</option>
+                        <option value="TR">Turchia</option>
+                    </select>
+                </label>
+
+                <label>Biografia 
+                    <textarea name="bio" maxlength ="500" placeholder="Parlaci di te" id="bio" rows="5" required></textarea>
+                </label>
+
+                <label>
+                    Carica File 
+                    <input type="file" name="file" required>
+                </label>
+
+                <div><input type="checkbox" name="newsletter" value="newsletter"> Iscriviti alla newsletter</div>
+                <div><input type="checkbox" name="terms and conditions" value="terms" required> Accetto i termini e condizioni</div>
+
+                <button type="submit" value="submit">Invia</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <small>© 2004 Tutti i diritti riservati.</small>
+    </footer>
+</body>
+</html>

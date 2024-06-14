@@ -1,0 +1,98 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+h1{
+    margin-top: 0;
+}
+
+header{
+    text-align: center;
+    background-color: bisque;
+    padding: 20px;
+}
+
+main{
+    background-image: url(../../assets/img/background.jpg);
+    background-position: fixed;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    background-color: rgba(255, 255, 255, 0.694);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 5px 2px #33333385;
+}
+
+label{
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="username"],
+input[type="number"],
+input[type="file"],
+select,
+textarea,
+button{
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+input[type="file"]{
+    border: none;
+}
+
+option:first-child{
+    display:none;
+}
+
+textarea {
+    resize: none;
+}
+
+section div{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button{
+    padding: 15px;
+    background-color: #4daf51;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+
+footer{
+    height: 100px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
